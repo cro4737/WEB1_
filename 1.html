@@ -1,28 +1,66 @@
 ﻿<!doctype html>
 <html>
-<head><title> 너에게 주고 싶은 노래 </title>
-<meta charset="utf-8">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165460022-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165460022-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-165460022-1');
-</script>
+    gtag('config', 'UA-165460022-1');
+  </script>
+<title> 너에게 주고 싶은 노래 </title>
+<meta charset="utf-8">
+<style>
+a{ color: black; text-decoration: none;}
+h1{
+font-size: 50px;
+text-align: center;
+border-bottom: 1.5px solid red;
+margin: 0;
+  }
+  ol{
+    border-right: 1.5px solid red;
+    width:200px;
+    margin: 0;
+    padding:20px;
+  }
+  body{margin: 0;}
+  #active {color:red;}
+  #grid{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+  }
+  #grid ol{
+  padding-left:33px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    ol{
+      border-right: none;
+    }
+    h1{
+    border-bottom: none;}
+  }
+</style>
 </head>
 <a href="index.html"><h1> MAIN </h1></a>
-<h3> ※ 저작권으로 인해 음악은 제공하지 않습니다!! </h3>
-<a href="4.html"><li>1. 자이언티 - 5월의 밤</li></a>
-<a href="1.html"><li>2. 엑소 - 중독</li></a>
-<a href="2.html"><li>3. 볼빨간사춘기 - 썸탈거야</li></a>
-<a href="3.html"><li>4. 스탠딩에그 - 보통의 날</li></a><br>
-
-<img src="https://musicmeta-phinf.pstatic.net/album/000/427/427948.jpg?type=r480Fll&v=20190402183328" width="30%">
-<br>
+<div id="grid">
+<ol >
+<a href="4.html"><li>자이언티 - 5월의 밤</li></a>
+<a href="1.html"><li id="active">엑소 - 중독</li></a>
+<a href="2.html"><li>볼빨간사춘기 - 썸탈거야</li></a>
+<a href="3.html"><li>스탠딩에그 - 보통의 날</li></a>
+</ol>
 <body>
-<a href="https://vibe.naver.com/album/4527134?lyrics=40143169" target="_blank" title="VIBE로 이동"><h3>Overdose</h3></a>
+  <div style="padding:33px">
+    <h3> ※ 저작권으로 인해 음악은 제공하지 않습니다!! </h3>
+    <img src="https://musicmeta-phinf.pstatic.net/album/000/427/427948.jpg?type=r480Fll&v=20190402183328" width="30%">
+    <br>
+<a href="https://vibe.naver.com/album/4527134?lyrics=40143169" target="_blank" title="VIBE로 이동"><h3>중독(Overdose)</h3></a>
 come in<br>
 <p>
 모든 걸 걸고 널 들이킨 나<br>
@@ -105,5 +143,6 @@ Too Much 너야 Your love<br>
 이건Overdose<br>
 Too Much 너야 Your love<br>
 이건Overdose<br>
+</div></div>
 </body>
 </html>
