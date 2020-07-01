@@ -2,7 +2,7 @@
 <html >
 
   <body>
-   <?php phpinfo(); ?>
+   <?php echo phpinfo(); ?>
   </body>
 </html>
 
